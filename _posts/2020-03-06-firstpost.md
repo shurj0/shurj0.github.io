@@ -24,7 +24,7 @@ For the competition this year, we are using a hybrid rocket engine that we desig
 
 The solid fuel is in the lining of the combustion chamber, while the liquid oxidizer is stored in a seperate tank. Using a valve, we can control the flow of oxidizer into the combustion chamber, and thus control the rate of combustion. This gives us the ability to reduce and cut off thrust at will. 
 
-Of course, this *drastically* increases the complexity of the rocket and the work we put into it, but it's only rocket science :P. 
+Of course, this *drastically* increases the complexity of the rocket and the work we put into it, but it's only rocket science 😅. 
 
 Anyways, the fact that we can control the rocket's engine is why we need an avionics team in the first place. We can't just put a rat inside the rocket and tell it when to turn the valves. That would leave me unemployed. Also rats are dumber than computers. See, we are taking on a different challenge of our own: we are building the flight computer for the rocket in-house, too. This computer reads the sensors, controls the valves, and makes sure that we dont lose the rocket in the desert like we did last year. Anyways, I digress.
 
