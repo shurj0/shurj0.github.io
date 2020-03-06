@@ -19,7 +19,7 @@ Most amateur rockets use commercial off-the-shelf solid rocket motors to provide
 For the competition this year, we are using a hybrid rocket engine that we designed and built in-house. In this engine, the fuel is still solid, in this case hydroxyl-terminated polybutadiene (HTPB), while the oxidizer is liquid nitrogen dioxide. The engine design is illustrated below:
 
 
-![rocket](/assets/rocket.png){: .img-fluid }
+<img src="/assets/rocket.png" alt="rocket" class="rounded img-fluid">
 
 
 The solid fuel is in the lining of the combustion chamber, while the liquid oxidizer is stored in a seperate tank. Using a valve, we can control the flow of oxidizer into the combustion chamber, and thus control the rate of combustion. This gives us the ability to reduce and cut off thrust at will. 
