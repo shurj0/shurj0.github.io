@@ -1,10 +1,10 @@
 ---
 title: First Post
-date: 2020-03-06 00:37:00
+date: 2020-03-06 05:01:00
 ---
 Hey there.
 
-I'm Shurjo, a college student. This is a blog. This blog belongs to me. I don't know why I'm starting this blog apart from the fact that I felt really strongly that I had to start a blog. 
+I'm Shurjo, a college student. This is a blog. This blog belongs to me. I don't know why I'm starting this blog. I only know that I felt really strongly about starting a blog.
 
 I have no idea what I'm going to be posting here, if I'm going to be posting here at all to begin with. My life really isn't that interesting to be blogging about in the first place. Plus, I'm a proper shit writer. I could blog about my feelings or my thoughts on things, and I think I will eventually make posts like that, but my feelings are quite personal and my thoughts often either generic or controversial. We'll see as we go. 
 
