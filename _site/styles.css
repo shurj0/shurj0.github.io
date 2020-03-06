@@ -1,0 +1,85 @@
+body {
+    background-color: #90A376;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}
+
+#links {
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+#top-part {
+    font-size: 1.5rem;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0,0,0,0.5);
+    border-bottom-style: solid;
+    padding-bottom: 5px;
+    text-align: center;
+}
+@media (min-width: 576px){
+    #top-part {
+        margin-top: 4rem;
+        padding-bottom: 20px;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    #links {
+        font-size: 1.5rem;
+        padding-top: 0;
+    }
+}
+@media (min-width: 992px) {
+    #top-part {
+        margin-top: 8rem;
+        font-size: 2rem;
+    }
+    #links {
+        font-size: 2rem;
+    }
+}
+
+
+strong {
+    font-weight: 600;
+}
+
+.contact-page {
+    margin-top: 100px;
+    text-align: center;
+}
+
+a {
+    color:#212529;
+}
+
+a:hover {
+    color:#212529;
+}
+
+ul {
+    list-style: none;
+}
+
+#post {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px;
+    border-bottom-style: double;
+    border-bottom-color: rgba(0,0,0,0.5);
+    padding-bottom: 20px;
+}
+
+#post-header {
+    margin-bottom: 0px;
+}
+
+#post-date {
+    font-size: 15px;
+}
+
+.img-fluid {
+    margin: 0 auto;
+    display: block;
+}

@@ -1,12 +1,17 @@
-<html>
-    <head>
-        <title>Shurjo Sakib Masood</title>
-    </head>
-    <body>
-        <font face="courier">
-        <h1 align="center" >
-            shurjo sakib masood
-        </h1>
-        </font>
-    </body>
-</html>
+---
+layout: default
+title: shurjo
+---
+
+
+    {% for post in site.posts %}
+
+        <div id="post">
+            <p id="post-header"><strong>{{ post.title }}</strong></p>
+            <p id="post-date">{{ post.date | date_to_string }}</p>
+            <p id="post-content">
+                {{ post.content }}
+            </p>
+        </div>
+
+    {% endfor %}
