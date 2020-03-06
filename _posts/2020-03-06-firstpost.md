@@ -6,9 +6,9 @@ Hey there.
 
 I'm Shurjo, a college student. This is a blog. This blog belongs to me. I don't know why I'm starting this blog. I only know that I felt really strongly about starting a blog.
 
-I have no idea what I'm going to be posting here, if I'm going to be posting here at all to begin with. My life really isn't that interesting to be blogging about in the first place. Plus, I'm a proper shit writer. I could blog about my feelings or my thoughts on things, and I think I will eventually make posts like that, but my feelings are quite personal and my thoughts often either generic or controversial. We'll see as we go. 
+I have no idea what I'm going to be posting here, if I'm going to be posting at all to begin with. My life really isn't all that fascinating to be blogging about in the first place. Plus, I'm a proper shit writer. I could blog about my feelings or my thoughts on things, and I think I will eventually make posts like that, but that's uncharted territory for me so I'm gonna have to ease into that. We'll see as we go. 
 
-The only thing really interesting going on in my life staying in the dorms over spring break is my involvement with MSU Rocketry. I don't want to be too technical on this blog very frequently, but recently I ran into a mathematical problem, and the solution to this problem turned out to be quite elegant and simple. And I found that quite interesting. So I'm going to write about it. 
+The only really interesting thing going on in my life (staying in the dorms over spring break) is my involvement with MSU Rocketry. I don't want to get too technical on this blog very often, but recently I ran into a mathematical problem, and the solution to this problem turned out to be quite elegant and simple. And I found that quite fascinating. So I'm going to blog about it. 
 
 First, some background:
 
@@ -82,6 +82,6 @@ Then, in order to calculate the max height the rocket would reach if the engine 
 
 With this solution, the computer doesn't have to spend nearly as much time solving complicated differential equations. All it needs to do is plug in the value at each time step. Literally. 
 
-Ok now I need to shower and sleep. Its 3 in the morning and I've been typing out this pointless post for way too fucking long. If you wanna take away a life lesson from this post, let it be this: 
+Ok now I need to shower and sleep. Its 3 in the morning and I've been typing out this pointless post for way too fucking long. If you wanna a life lesson to take away from this post, let it be this: 
 
 Don't stay sober over spring break, you might start blogging.
