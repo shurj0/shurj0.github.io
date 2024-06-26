@@ -1,6 +1,6 @@
 body {
     background-color: #15130F;
-    background-image: url('/topcorner.svg'), url('/botcorner.svg');
+    background-image: url('/assets/backgrounds/topcorner.svg'), url('/assets/backgrounds/botcorner.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: right top, left bottom;
     background-size: 100%;
@@ -124,8 +124,13 @@ strong {
     margin-right: auto;
 }
 
+#contact-header {
+    font-size: 1.5rem;
+    color:rgba(162, 128, 146, 1);
+}
+
 tr {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 th {
