@@ -1,13 +1,18 @@
 body {
-    background-color: rgba(21, 19, 15, 1);
+    background-color: #15130F;
+    background-image: url('/topcorner.svg'), url('/botcorner.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, left bottom;
+    background-size: 100%;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 300;
     font-optical-sizing: auto;
     font-style: normal;
-    color: rgba(161, 154, 145, 1);
+    color: rgba(165, 148, 129, 1);
     font-variation-settings:
         "wdth" 100,
         "YTLC" 500;
+    margin-bottom: 0;
 }
 
 #links {
@@ -20,11 +25,15 @@ body {
 #top-part {
     font-size: 1.5rem;
     border-bottom-width: 1px;
-    border-bottom-color: rgba(161, 154, 145, 1);
+    border-bottom-color: rgba(165, 148, 129, 1);
     border-bottom-style: solid;
     margin-top: 2rem;
     padding-bottom: 5px;
     text-align: center;
+}
+
+a.top-part-title {
+    color: rgba(162, 128, 146, 1);
 }
 
 #main-body {
@@ -35,6 +44,9 @@ body {
 
 
 @media (min-width: 576px){
+    body {
+        background-size: 80%;
+    }
     #top-part {
         margin-top: 4rem;
         padding-bottom: 20px;
@@ -55,6 +67,9 @@ body {
 }
 
 @media (min-width: 768px) {
+    body {
+        background-size: 80%;
+    }
     #top-part {
         margin-top: 4rem;
         padding-bottom: 20px;
@@ -72,6 +87,9 @@ body {
 }
 
 @media (min-width: 992px) {
+    body {
+        background-size: 80%;
+    }
     #top-part {
         margin-top: 8rem;
         font-size: 1.75rem;
@@ -85,6 +103,12 @@ body {
         padding-left: 40px;
         padding-right: 40px;
         min-height: 68vh;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        background-size: 70%;
     }
 }
 
@@ -117,7 +141,7 @@ td {
     text-align: right;
 }
 a {
-    color:rgba(161, 154, 145, 1);
+    color:rgba(165, 148, 129, 1);
     text-decoration: none;
 }
 
@@ -135,7 +159,7 @@ ul {
     margin-bottom: 50px;
     border-bottom: 1px;
     border-bottom-style: double;
-    border-bottom-color: rgba(161, 154, 145, 1);
+    border-bottom-color: rgba(165, 148, 129, 1);
     padding-bottom: 15px;
 }
 
@@ -189,4 +213,5 @@ footer {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-bottom: 0;
 }
