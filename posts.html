@@ -1,0 +1,15 @@
+---
+layout: default
+title: posts
+---
+
+<div id="post-listing-container">
+    {% for post in site.posts %}
+
+        <div id="post-listing">
+            <div><a href="{{ post.url }}"><h4 id="post-listing-title">{{ post.title }}</h4></a></div>
+            <div id="post-listing-date">{{ post.date | date_to_string }}</div>   
+        </div>
+
+    {% endfor %}
+</div>

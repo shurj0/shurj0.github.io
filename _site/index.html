@@ -4,8 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="/styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 
         <title>shurjo</title>
     </head>
@@ -15,12 +19,12 @@
             <div class="row" id="top-part">
                 <div class="col-md-1"></div>
                 <div class="col-md-6 col-sm-6">
-                    > shurjo sakib masood
+                    <a href="/">> shurjo sakib masood</a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class=row id="links">
                         <div class="col col-sm-4">
-                            <a href="/">home</a>
+                            <a href="/posts">posts</a>
                         </div>
                         <div class="col col-sm-4">
                             <a href="https://github.com/shurj0" target="_blank">github</a>
@@ -33,106 +37,83 @@
                 <div class="col-md-1"></div>
             </div>
             </h2>
-            <div class="row" id="main-body">
-                <div class="col-md-1"></div>
-                <div class="col-md">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-md" id="main-body">
                         
 
         <div id="post">
-            <p id="post-header"><strong>First Post</strong></p>
-            <p id="post-date">05 Mar 2020</p>
+            <a href="/2024/06/25/firstpostagain.html"><h3 id="post-header"><strong>Welcome, again.</strong></h3></a>
+            <p id="post-date">25 Jun 2024</p>
             <p id="post-content">
-                <p>Hey there.</p>
-
-<p>I’m Shurjo, a college student. This is a blog. This blog belongs to me. I don’t know why I’m starting this blog apart from the fact that I felt really strongly that I had to start a blog.</p>
-
-<p>I have no idea what I’m going to be posting here, if I’m going to be posting here at all to begin with. My life really isn’t that interesting to be blogging about in the first place. Plus, I’m a proper shit writer. I could blog about my feelings or my thoughts on things, and I think I will eventually make posts like that, but my feelings are quite personal and my thoughts often either generic or controversial. We’ll see as we go.</p>
-
-<p>The only thing really interesting going on in my life staying in the dorms over spring break is my involvement with MSU Rocketry. I don’t want to be too technical on this blog very frequently, but recently I ran into a mathematical problem, and the solution to this problem turned out to be quite elegant and simple. And I found that quite interesting. So I’m going to write about it.</p>
-
-<p>First, some background:</p>
-
-<p>I’m part of the avionics subteam within the rocketry team. The competition our team is participating in, Spaceport America Cup, judges performance based on a multitude of criteria. The main criteria that concerns me is that the maximum height, or ‘apogee’, of the rocket. The goal is to make sure the apogee is as close to 10,000 feet as possible. Overshooting that target by 500 feet is the same as being 500 feet below.</p>
-
-<p>Most amateur rockets use commercial off-the-shelf solid rocket motors to provide thrust for their rockets. These motors consist of a mixture of a fuel and an oxidizer in solid form within a casing. When the mixture is lit, combustion begins and the rocket goes bye-bye. You can easily make a solid rocket motor at home using household ingredients. I did so myself by melting together sugar and potassium nitrate (which I stole from my school’s chem lab, true story, but stump remover also works) into a mixture. Of course, its simplicity brings with it some inherent drawbacks. Solid rocket motors cannot be slowed down, controlled, or stopped, once ignited. You can guess how this would be a problem in a competition where the objective is to reach a precise height. Moreover, the performance (well, specific impulse) is quite terrible when compared to its more complicated cousins.</p>
-
-<p>For the competition this year, we are using a hybrid rocket engine that we designed and built in-house. In this engine, the fuel is still solid, in this case hydroxyl-terminated polybutadiene (HTPB), while the oxidizer is liquid nitrogen dioxide. The engine design is illustrated below:</p>
-
-<p><img src="/assets/rocket.png" alt="rocket" class="img-fluid" /></p>
-
-<p>The solid fuel is in the lining of the combustion chamber, while the liquid oxidizer is stored in a seperate tank. Using a valve, we can control the flow of oxidizer into the combustion chamber, and thus control the rate of combustion. This gives us the ability to reduce and cut off thrust at will.</p>
-
-<p>Of course, this <em>drastically</em> increases the complexity of the rocket and the work we put into it, but it’s only rocket science :P.</p>
-
-<p>Anyways, the fact that we can control the rocket’s engine is why we need an avionics team in the first place. We can’t just put a rat inside the rocket and tell it when to turn the valves. That would leave me unemployed. Also rats are dumber than computers. See, we are taking on a different challenge of our own: we are building the flight computer for the rocket in-house, too. This computer reads the sensors, controls the valves, and makes sure that we dont lose the rocket in the desert like we did last year. Anyways, I digress.</p>
-
-<p>Among other things, I had to implement the algorithm that shuts off the engine so the rocket reaches an apogee as close to 10,000 feet as possible. For this, the computer needs to continuously calculate the maximum height it would reach if the engine were to be cut off at that instant. Once this calculated maximum height is approximately equal to 10,000 feet, the engine is cut off, and the rocket coasts to its apogee.</p>
-
-<p>Sounds pretty simple until you realize that we don’t live in an ideal world, air exists (though you could argue that air is essential in an ideal world), and thus drag is a factor, especially when you reach velocities in the ballpark of 250 meters per second.</p>
-
-<p>Once the engine is cut off, the downwards force on the rocket is gravity plus the drag force (which is some constant multiplied by the square of velocity):</p>
-
-<script type="math/tex; mode=display">F = -mg - Cv^2</script>
-
-<p>Or in other words,</p>
-
-<script type="math/tex; mode=display">ma = -mg - Cv^2</script>
-
-<script type="math/tex; mode=display">a = -g - \frac{C}{m}v^2</script>
-
-<script type="math/tex; mode=display">\frac{dv}{dt} = -g - \frac{C}{m}v^2</script>
-
-<p>This is a differential equation in terms of velocity with respect to time. Soving this differential equation gives us the the function of velocity, and then we can solve <script type="math/tex">v(t) = 0</script> to find out when the rocket reaches its peak, then integrate velocity from <script type="math/tex">0</script> to <script type="math/tex">t</script> to calculate the distance it covers after the engine is shut off.</p>
-
-<p>This wouldn’t be a problem if I had any idea how to solve non-linear differential equations in the first place. But even if I did, I don’t want to solve it myself. I want the <strong>computer</strong> to solve it for me. As it turns out, the former is a prerequisite for the latter, so I had to go a different route and turn it into a problem that I was actually qualified to solve.</p>
-
-<p>Turns out, we can write</p>
-
-<script type="math/tex; mode=display">ma = m\frac{dv}{dt} = m\frac{dv}{dx}\frac{dx}{dt}</script>
-
-<p>But,</p>
-
-<script type="math/tex; mode=display">\frac{dx}{dt} = v</script>
-
-<p>So,</p>
-
-<script type="math/tex; mode=display">m\frac{dv}{dx}\frac{dx}{dt} = mv\frac{dv}{dt}</script>
-
-<p>And therefore,</p>
-
-<script type="math/tex; mode=display">mv\frac{dv}{dx} = -mg - Cv^2</script>
-
-<p>Now, we can seperate the variables:</p>
-
-<script type="math/tex; mode=display">dx = -\frac{mv}{mg + Cv^2}dv</script>
-
-<p>Integrating this equation from <script type="math/tex">v_0</script> to <script type="math/tex">v</script>, we get</p>
-
-<script type="math/tex; mode=display">\int_{0}^x dx = -\int_{v_0}^v\frac{mv}{mg + Cv^2}dv</script>
-
-<script type="math/tex; mode=display">x = \frac{m}{2C}ln\Big(\frac{mg + Cv_0^2}{mg + Cv^2}\Big)</script>
-
-<p>We then substitute <script type="math/tex">v = 0</script> into the above equation, as velocity is 0 at maximum height, to get:</p>
-
-<script type="math/tex; mode=display">x_{max} = \frac{m}{2C}ln\Big(1 + \frac{Cv_0^2}{mg}\Big)</script>
-
-<p>Then, in order to calculate the max height the rocket would reach if the engine were to be shut off at that point in time, we just use the above equation, replacing <script type="math/tex">v_0</script> with the velocity read from the rocket’s accelerometer. Testing this solution against data from a simulated launch, the algorithm predicts the maximum altitude within a more than reasonable margin of error.</p>
-
-<p>With this solution, the computer doesn’t have to spend nearly as much time solving complicated differential equations. All it needs to do is plug in the value at each time step. Literally.</p>
-
-<p>Ok now I need to shower and sleep. Its 3 in the morning and I’ve been typing out this pointless post for way too fucking long. If you wanna take away a life lesson from this post, let it be this:</p>
-
-<p>Don’t stay sober over spring break, you might start blogging.</p>
+                <p>Hey there. Welcome to my personal website, again.
+I seem to be awful at keeping up with these things, but here’s hoping that this one sticks around.
+I don’t have much to say at the moment, but feel free to add me on socials or reach out to me, if you want.</p>
 
             </p>
         </div>
 
     
 
+        <div id="post">
+            <a href="/2024/06/25/loremipsum.html"><h3 id="post-header"><strong>Lorem Ipsum</strong></h3></a>
+            <p id="post-date">25 Jun 2024</p>
+            <p id="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat arcu vel mollis vehicula. Curabitur eget laoreet quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae quam eget lectus imperdiet tempor. Nulla pulvinar nisi a ante dapibus finibus. Aliquam in tincidunt odio. Curabitur id orci eu nulla scelerisque ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce pulvinar, ex eget venenatis ullamcorper, lacus ipsum fermentum mauris, eu pulvinar purus metus id urna. Donec nec rhoncus felis.</p>
+
+<p>Morbi tincidunt tortor diam. Nam rhoncus ipsum ut enim laoreet, eu scelerisque ipsum semper. Nulla sed dui mollis, gravida eros at, convallis ipsum. Sed faucibus nulla non pretium fermentum. Suspendisse rhoncus nec ex interdum elementum. Nunc convallis, elit quis egestas imperdiet, nulla risus condimentum massa, sed porttitor ligula magna sit amet ex. Sed fringilla quam et sapien efficitur mattis. Aenean facilisis sed est quis ultricies. Fusce fermentum, est ornare pulvinar ornare, tortor justo ullamcorper leo, vel tristique velit augue et est. Integer vestibulum, tortor at placerat ornare, enim est maximus nibh, sed volutpat massa nisl nec erat. Sed vitae orci lacinia, hendrerit magna nec, molestie velit. Duis sit amet lacus laoreet, gravida ante eget, auctor ipsum.</p>
+
+<p>Maecenas laoreet metus erat, vel pellentesque odio rhoncus et. Praesent risus nulla, suscipit ut dictum nec, convallis et nibh. Phasellus feugiat vel lorem ut placerat. Ut vehicula ante id justo efficitur, ac consectetur ex sagittis. Donec finibus nibh eu felis porta consequat. Pellentesque varius neque quam, bibendum tempus est rhoncus ac. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam risus mi, dignissim sit amet augue vitae, tincidunt sollicitudin sapien. Aliquam suscipit euismod justo a aliquet. Sed tristique dui sit amet lacinia efficitur. Maecenas convallis erat et tempor varius. Pellentesque pulvinar nulla enim, eget aliquet nunc euismod eget. Sed dapibus laoreet feugiat. Praesent vel iaculis lacus, ac tempor felis. Nulla nec tristique enim.</p>
+
+<p>Vestibulum rhoncus tincidunt gravida. Nulla lobortis nisi non risus varius, a accumsan urna mollis. Fusce mattis et diam eget tempus. Vivamus mattis ultricies enim non rhoncus. Ut a diam tincidunt, semper nisl nec, pretium tellus. Duis elit mauris, euismod ut enim id, pulvinar facilisis dui. Cras arcu nisl, ullamcorper a fermentum a, aliquam semper nisi. Etiam convallis nisi magna, ut scelerisque turpis sodales id.</p>
+
+<p>Curabitur gravida neque nec auctor tincidunt. Suspendisse nisl erat, facilisis nec tempor id, commodo ut elit. Mauris ante dui, accumsan id lectus sed, tristique luctus mi. Vestibulum pellentesque odio mi, et pellentesque felis pharetra ac. Phasellus dapibus quis velit vulputate porttitor. Nunc vulputate sollicitudin leo, id porttitor diam dapibus vitae. Fusce vel faucibus leo. Vestibulum id sollicitudin elit, vitae lacinia erat. Pellentesque nec libero mi. Praesent iaculis justo ac euismod feugiat. Pellentesque felis mi, accumsan in sagittis sit amet, consequat et elit. Aliquam ac dictum elit. Integer convallis mattis commodo. Nam ut nunc eu dolor dignissim condimentum.</p>
+
+<p>Praesent arcu urna, dictum sed vestibulum at, varius sit amet felis. Donec augue dui, placerat eget sagittis vel, blandit dictum sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas at aliquet augue, vitae malesuada magna. Aliquam et lobortis sem, finibus placerat lorem. Praesent ac pharetra urna. Mauris a pretium nisi. Integer malesuada ligula ipsum, non porta mauris facilisis quis. Curabitur nec mattis mi. Integer tincidunt felis eget ex aliquet, sit amet sodales velit finibus. Praesent eleifend lobortis orci, eu interdum ligula tristique ac. Aliquam lobortis rhoncus risus sed ornare. Integer fermentum elementum dui dignissim vestibulum. Etiam venenatis, nibh ac consectetur consectetur, dui neque tristique quam, sit amet sodales ipsum lacus vitae mi. Nam euismod a sem et consequat.</p>
+
+<p>Donec nulla nibh, consequat ut congue eu, viverra at massa. Curabitur bibendum, lacus sed congue ultricies, justo risus elementum nulla, nec congue nisi turpis id nisl. Maecenas iaculis dapibus eros. Suspendisse eleifend tortor nulla, id pretium purus mattis at. Curabitur sed scelerisque libero. Duis a leo non turpis facilisis commodo. Fusce rutrum imperdiet viverra. Nunc tincidunt dolor ac diam consectetur, non pretium sapien lobortis. Fusce a felis dapibus, bibendum leo non, condimentum diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+<p>Quisque nisi tortor, posuere at nisi efficitur, ornare efficitur lacus. Nulla tempor in eros eget semper. Praesent a pharetra tellus. Integer et dolor scelerisque, aliquet lorem sit amet, faucibus velit. Quisque est justo, tristique elementum elementum in, congue in justo. Donec scelerisque augue vel tortor sodales, sed faucibus mauris ullamcorper. Donec egestas augue eu urna dapibus luctus. Curabitur ut ex urna. Donec non turpis porttitor risus auctor luctus. Suspendisse placerat tempor gravida. Duis eget orci in purus tincidunt iaculis.</p>
+
+<p>Aenean faucibus sapien eu ligula venenatis, vitae vehicula augue pulvinar. Sed consequat molestie nisl, non ullamcorper orci venenatis sit amet. Integer eros lectus, pharetra in tortor sed, hendrerit suscipit neque. Fusce varius, dui sed commodo vehicula, lorem velit finibus ex, at mollis mauris neque id felis. Donec bibendum justo ut rhoncus sollicitudin. Proin mi urna, laoreet quis euismod et, venenatis nec orci. Donec nisi elit, placerat at lectus at, pulvinar congue diam. Mauris varius suscipit consequat. Suspendisse tincidunt vulputate dapibus. Sed sit amet congue tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et efficitur diam.</p>
+
+<p>Fusce quis odio in mauris semper suscipit. Mauris lobortis orci vel tincidunt tristique. Sed posuere justo dui, ut dapibus ex euismod in. Sed ligula est, fermentum quis velit ac, placerat accumsan ante. Maecenas et aliquet nunc. Cras efficitur faucibus lacus, et malesuada odio egestas elementum. Sed commodo, elit nec tincidunt finibus, enim massa rhoncus sem, eget feugiat sem risus ac felis. Quisque dignissim nibh nec orci rhoncus, quis ullamcorper dui tincidunt. Maecenas condimentum sapien vitae molestie tristique. Nunc lobortis tellus felis, eget porta lacus lobortis non. In mattis aliquam augue et egestas. Proin dui ex, efficitur id odio id, porttitor elementum neque. Vivamus molestie laoreet augue, sit amet sagittis mi. Nunc lectus augue, porta ac viverra a, lacinia in dui. Proin interdum finibus mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+<p>In finibus odio mauris, eget euismod est condimentum vel. Morbi tempus velit et tellus fringilla dictum. Vestibulum tincidunt, sapien vel laoreet feugiat, nibh arcu varius nisi, in aliquet erat ex in magna. Vivamus vestibulum ex urna, non tempor lorem faucibus eu. Quisque gravida urna non efficitur dapibus. Maecenas tempor non lectus sed euismod. Fusce eu neque quis arcu facilisis lobortis eu id nibh. Fusce sit amet diam quis tortor accumsan faucibus.</p>
+
+<p>Suspendisse quis commodo risus. Aliquam fringilla est justo, dapibus faucibus augue eleifend eget. Nam vitae mattis purus, sit amet bibendum leo. Cras turpis ex, scelerisque id nibh id, gravida facilisis tortor. Curabitur eu nisi quis est ullamcorper venenatis. Nulla diam justo, bibendum non maximus nec, egestas sed lacus. Morbi cursus hendrerit augue, nec pulvinar massa. Nunc tempor luctus nisl, quis elementum dui aliquam iaculis. Morbi eu sem sed tortor aliquet scelerisque. Cras fermentum et tellus a malesuada. Mauris eleifend odio nec magna tempor, a tempor lectus pulvinar. Nunc est nulla, accumsan eget tellus maximus, mollis molestie massa. Sed gravida suscipit viverra. Suspendisse sapien purus, imperdiet non lobortis sed, varius eget arcu. Donec et lacus sit amet sem consectetur dapibus ut nec mauris.</p>
+
+<p>Morbi sollicitudin diam non erat egestas auctor. Phasellus et suscipit mauris. Integer volutpat posuere nisi, nec semper nisl efficitur a. Donec nisi mi, pellentesque ac lectus vel, sodales mollis mauris. Mauris volutpat orci nulla, in placerat tortor egestas vel. In non erat eu lorem elementum vulputate. Fusce viverra leo tempor velit facilisis interdum. Mauris auctor rutrum libero vel commodo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam vel aliquam lorem. Curabitur finibus diam vitae mollis molestie. Curabitur dignissim lorem et sagittis tempus. Suspendisse id egestas ipsum. Pellentesque convallis ligula id justo accumsan, vel sodales urna lacinia.</p>
+
+<p>Quisque at purus vitae metus dignissim vehicula nec vel metus. Sed aliquam, leo placerat scelerisque fringilla, mauris risus dictum enim, sit amet aliquet odio nibh non ex. Phasellus gravida elementum purus et varius. Quisque vestibulum at tellus in blandit. Vivamus eget mi in magna blandit lobortis. Sed molestie felis varius eleifend pulvinar. Donec sed mi sagittis, pharetra ex id, ornare nisi. Curabitur at laoreet nunc, luctus placerat quam. Pellentesque lorem ex, tincidunt eu erat ut, pharetra ornare augue. In et quam risus.</p>
+
+<p>Ut orci leo, dapibus sed consectetur eu, pharetra eget ante. Phasellus a pellentesque neque. Maecenas lacinia mauris et facilisis scelerisque. Suspendisse pellentesque volutpat gravida. In lacus ligula, lacinia et turpis ultrices, viverra congue libero. Praesent elementum turpis lacus, id pellentesque mi luctus at. Sed sagittis tellus lorem, a bibendum quam faucibus ac. Nam sit amet condimentum augue, sed elementum elit. Etiam mattis, erat nec venenatis mollis, turpis purus fermentum mauris, et mollis libero tortor eu leo. Sed diam mi, sagittis eget ante sed, blandit hendrerit elit. Sed imperdiet lacinia ligula, quis faucibus metus aliquam sed. Sed dictum mi vel elit lobortis laoreet. Sed vitae nibh tortor.</p>
+
+<p>Cras ultrices lobortis hendrerit. Donec in molestie purus. Nunc sodales nibh velit, nec venenatis arcu rutrum non. Mauris ac tortor ipsum. Nunc et tellus tincidunt, interdum orci quis, ornare nisl. Suspendisse interdum egestas urna eget consequat. Aliquam diam metus, rhoncus quis eros at, rutrum ornare nisi. Vestibulum accumsan ut ligula eget laoreet.</p>
+
+<p>Morbi at metus ut nulla tincidunt varius. Aenean purus arcu, aliquam sit amet finibus in, euismod vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras odio metus, egestas sit amet lorem ac, auctor vehicula massa. Fusce blandit dictum elit ut egestas. Etiam ultricies, lectus sit amet dignissim sollicitudin, ex nulla consectetur odio, et fringilla sapien justo et nisi. Aliquam erat volutpat. Mauris ex lorem, fringilla eget consectetur ut, condimentum at nulla. Curabitur sollicitudin dolor id tortor tempus volutpat. Maecenas est ipsum, finibus nec ultrices eget, semper ac mauris. In ligula sapien, pharetra eget mattis vitae, volutpat sit amet ligula. Duis vehicula ligula eget ultricies interdum. Aliquam eu dui sit amet turpis condimentum feugiat eu eu libero.</p>
+
+<p>Aenean pulvinar ullamcorper nibh, a facilisis arcu pharetra at. Cras hendrerit nisi id lectus pharetra, sit amet pharetra arcu placerat. Cras semper est in tristique cursus. Quisque ullamcorper tincidunt enim, in suscipit urna porta a. Mauris varius, felis tempus porttitor lobortis, ex lacus elementum mauris, nec tempor sapien nulla ac sapien. Pellentesque mattis diam sit amet facilisis vehicula. Etiam id velit eu risus aliquam suscipit eu et arcu. Duis fringilla mauris vel lacus faucibus vehicula. Integer pellentesque massa sed purus pellentesque, nec suscipit ante ullamcorper.</p>
+
+<p>Maecenas leo ligula, eleifend a quam vel, consectetur lobortis orci. Maecenas rhoncus elit vitae tincidunt porta. Proin lacinia mauris eget nisl ultricies, eu maximus tortor sodales. Praesent maximus sem neque, vel interdum risus sodales at. Integer tempus justo turpis, a fermentum purus condimentum ac. Suspendisse eu ullamcorper velit, a viverra nibh. Cras eget odio commodo, iaculis lectus non, feugiat est. Etiam aliquet aliquam massa, sodales viverra mauris venenatis in. Cras viverra ex lectus, sed feugiat risus consequat id. Aliquam dictum molestie diam, quis congue mauris interdum nec. In scelerisque tortor non vulputate porta. Vestibulum tempor lobortis suscipit. Nullam massa dolor, viverra sit amet accumsan ut, dapibus quis purus.</p>
+
+<p>Aliquam eget mi vel nunc facilisis commodo. Pellentesque non tincidunt nisi. Phasellus consectetur ligula et aliquam feugiat. Fusce faucibus risus in justo mattis venenatis. Etiam metus eros, dignissim tempus elit et, elementum vehicula tortor. Praesent elit risus, laoreet id lectus id, hendrerit hendrerit lectus. Vivamus ac feugiat nibh. Phasellus feugiat velit eu tincidunt vestibulum. Morbi quis aliquet nisi, et imperdiet arcu.</p>
+
+            </p>
+        </div>
+
+    
+
+
                 </div>
-                <div class="col-md-1"></div>
+                <div class="col-1"></div>
             </div>
         </div>
+        <footer class="footer mt-auto">
+            <div class="container">
+                <span>Copyright 2024 Shurjo Sakib Masood.</span>
+            </div>
+        </footer>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
               extensions: [
@@ -153,5 +134,6 @@
             });
           </script>
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

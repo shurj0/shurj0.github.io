@@ -1,42 +1,90 @@
 body {
-    background-color: #90A376;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    background-color: rgba(21, 19, 15, 1);
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 300;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgba(161, 154, 145, 1);
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
 }
 
 #links {
     text-align: center;
     font-size: 1rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 #top-part {
     font-size: 1.5rem;
     border-bottom-width: 1px;
-    border-bottom-color: rgba(0,0,0,0.5);
+    border-bottom-color: rgba(161, 154, 145, 1);
     border-bottom-style: solid;
+    margin-top: 2rem;
     padding-bottom: 5px;
     text-align: center;
 }
+
+#main-body {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    min-height: 75vh;
+}
+
+
 @media (min-width: 576px){
     #top-part {
         margin-top: 4rem;
         padding-bottom: 20px;
         font-size: 1.5rem;
         text-align: left;
+        padding-left: 5vw;
     }
     #links {
         font-size: 1.5rem;
         padding-top: 0;
+        padding-right: 5vw;
+    }
+    #main-body {
+        padding-left: 10vw;
+        padding-right: 40px;
+        min-height: 75vh;
     }
 }
+
+@media (min-width: 768px) {
+    #top-part {
+        margin-top: 4rem;
+        padding-bottom: 20px;
+        font-size: 1.5rem;
+    }
+    #links {
+        font-size: 1.25rem;
+        padding-top: 0;
+    }
+    #main-body {
+        padding-left: 10vw;
+        padding-right: 40px;
+        min-height: 75vh;
+    }
+}
+
 @media (min-width: 992px) {
     #top-part {
         margin-top: 8rem;
-        font-size: 2rem;
+        font-size: 1.75rem;
+        padding-left: 0;
     }
     #links {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        padding-right: 0;
+    }
+    #main-body {
+        padding-left: 40px;
+        padding-right: 40px;
+        min-height: 68vh;
     }
 }
 
@@ -46,16 +94,36 @@ strong {
 }
 
 .contact-page {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
 }
 
+#contact-list {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr {
+    font-size: 1.25rem;
+}
+
+th {
+    padding-right: 50px;
+    padding-top: 10px;
+    text-align: left;
+}
+td {
+    padding-top: 10px;
+    text-align: right;
+}
 a {
-    color:#212529;
+    color:rgba(161, 154, 145, 1);
+    text-decoration: none;
 }
 
 a:hover {
-    color:#212529;
+    color:rgba(162, 128, 146, 1);
+    text-decoration: none;
 }
 
 ul {
@@ -67,20 +135,58 @@ ul {
     margin-bottom: 50px;
     border-bottom: 1px;
     border-bottom-style: double;
-    border-bottom-color: rgba(0,0,0,0.5);
-    padding-bottom: 20px;
+    border-bottom-color: rgba(161, 154, 145, 1);
+    padding-bottom: 15px;
 }
 
 #post-header {
     margin-bottom: 0px;
+    color: rgba(162, 128, 146, 1);
+    font-size: 1.5rem;
 }
 
 #post-date {
-    font-size: 15px;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: rgba(161, 154, 145, 0.7);
+    padding-top: 5px;
+}
+
+#post-listing-container {
+    margin-top: 50px;
+}
+
+#post-listing {
+    margin-top: 10px;
+}
+
+#item-start {
+    margin: auto;
+}
+
+#post-listing-title {
+    color: rgba(162, 128, 146, 1);
+    margin: 0px;
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+#post-listing-date {
+    color: rgba(161, 154, 145, 0.7);
+    font-style: italic;
+    font-size: 0.75rem;
 }
 
 .img-fluid {
     margin: 0 auto;
     display: block;
     
+}
+
+footer {
+    padding-bottom: 16px;
+    color: rgba(161, 154, 145, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
