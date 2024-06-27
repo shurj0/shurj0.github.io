@@ -27,8 +27,9 @@
     }
 
     .nav-title {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         font-weight: 500;
+        padding-bottom: 0.5rem;
     }
 
     .nav-links > div {
@@ -37,6 +38,7 @@
 
     .nav-links {
         display: flex;
+        padding-bottom: 0.5rem;
     }
 
     .nav-links > div {
