@@ -7,7 +7,7 @@ title: posts
     {% for post in site.posts %}
 
         <div id="post-listing">
-            <div><h4 id="post-listing-title"><a href="{{ post.url }}">{{ post.title }}</a></h4></div>
+            <div><a href="{{ post.url }}"><h4 id="post-listing-title">{{ post.title }}</h4></a></div>
             <div id="post-listing-date">{{ post.date | date_to_string }}</div>   
         </div>
 
